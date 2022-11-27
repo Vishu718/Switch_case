@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Switch Case</title>
+    <script>
+        var choice= parseInt(prompt("Enter Your Choice.. for add 1 n for substraction 2 n for multiplication 3 n for division 4."));
+            num1= parseInt(prompt("Enter Number 1:"));
+            num2=parseInt(prompt("Enter Number 2:"));
+       /* if(choice==1){
+            var total=num1+num2;
+            document.write("add::"+total);
+        }
+        else if(choice==2){
+            var sub=num1-num2;
+            document.write("subs::"+sub);
+        }*/
+        switch(choice){
+            case 1:
+                var result=num1+num2;
+                document.write("res:"+result);
+                break;
+
+            case 2:
+                //var main=num1-num2;
+                if(num1>num2){
+                    var main1=num1-num2;
+                    document.write("sub:" +main1);
+                }
+                else {
+                    var main2=num2-num1;
+                    document.write("subra:" +main2);
+                }
+                //document.write("sub:"+main);
+                break;
+
+                case 3:
+                 var mul=num1*num2;
+                 document.write("multi:"+mul);
+                 break;
+                 
+                case 4:
+                    if(num1>num2){
+                        var div=num1/num2;
+                        document.write("division"+div);
+                    }
+                    
+                    else {
+                        var divi= num2/num1;
+                        document.write("divisi"+divi);
+                    }
+                    break;
+            default:
+                var text="no value found!";
+                document.write(text);
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
